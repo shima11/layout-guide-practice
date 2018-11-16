@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A884ABDF9531B7222409610 /* Pods_layout_guide_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442432CB4AE8A3D59F5EFE8B /* Pods_layout_guide_practice.framework */; };
 		D418E1A8219EC7D000C2A24D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418E1A7219EC7D000C2A24D /* AppDelegate.swift */; };
 		D418E1AA219EC7D000C2A24D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D418E1A9219EC7D000C2A24D /* ViewController.swift */; };
 		D418E1AD219EC7D000C2A24D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D418E1AB219EC7D000C2A24D /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F511BB92B83956D690C8119 /* Pods-layout-guide-practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-layout-guide-practice.release.xcconfig"; path = "Pods/Target Support Files/Pods-layout-guide-practice/Pods-layout-guide-practice.release.xcconfig"; sourceTree = "<group>"; };
+		442432CB4AE8A3D59F5EFE8B /* Pods_layout_guide_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_layout_guide_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D3C0A475A4B9E2FD23C7BA /* Pods-layout-guide-practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-layout-guide-practice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-layout-guide-practice/Pods-layout-guide-practice.debug.xcconfig"; sourceTree = "<group>"; };
 		D418E1A4219EC7CF00C2A24D /* layout-guide-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "layout-guide-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D418E1A7219EC7D000C2A24D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D418E1A9219EC7D000C2A24D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A884ABDF9531B7222409610 /* Pods_layout_guide_practice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				D418E1A6219EC7CF00C2A24D /* layout-guide-practice */,
 				D418E1A5219EC7CF00C2A24D /* Products */,
+				DD126CCEB0D6B485B5EEFDB3 /* Pods */,
+				F80D13002F490E7E0C4815C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "layout-guide-practice";
 			sourceTree = "<group>";
 		};
+		DD126CCEB0D6B485B5EEFDB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71D3C0A475A4B9E2FD23C7BA /* Pods-layout-guide-practice.debug.xcconfig */,
+				1F511BB92B83956D690C8119 /* Pods-layout-guide-practice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F80D13002F490E7E0C4815C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				442432CB4AE8A3D59F5EFE8B /* Pods_layout_guide_practice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D418E1B6219EC7D100C2A24D /* Build configuration list for PBXNativeTarget "layout-guide-practice" */;
 			buildPhases = (
+				BF09A26909A9BDE19A7647FF /* [CP] Check Pods Manifest.lock */,
 				D418E1A0219EC7CF00C2A24D /* Sources */,
 				D418E1A1219EC7CF00C2A24D /* Frameworks */,
 				D418E1A2219EC7CF00C2A24D /* Resources */,
+				FE3334BA4167519C95C96A24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF09A26909A9BDE19A7647FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-layout-guide-practice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE3334BA4167519C95C96A24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-layout-guide-practice/Pods-layout-guide-practice-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-layout-guide-practice/Pods-layout-guide-practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D418E1A0219EC7CF00C2A24D /* Sources */ = {
@@ -213,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,10 +353,12 @@
 		};
 		D418E1B7219EC7D100C2A24D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71D3C0A475A4B9E2FD23C7BA /* Pods-layout-guide-practice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "layout-guide-practice/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +372,12 @@
 		};
 		D418E1B8219EC7D100C2A24D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F511BB92B83956D690C8119 /* Pods-layout-guide-practice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "layout-guide-practice/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
